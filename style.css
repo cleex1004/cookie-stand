@@ -1,0 +1,68 @@
+body {
+  background-color:   #ff8080;
+  color: #000033;
+}
+ul {
+  font-weight: bold;
+  font-size: 30px;
+  color: white;
+  margin: 20px;
+  font-family: 'Arvo';
+}
+li {
+  font-weight: normal;
+  font-size: 20px;
+  color: #000033;
+  margin-left: 20px;
+  margin-top: 5px;
+  font-family: Helvetica;
+}
+p {
+  font-size: 22px;
+  color: #000033;
+  margin-left: 60px;
+  margin-right: 60px;
+}
+h2 {
+  color: white;
+  font-size: 30px;
+  font-family: 'Arvo';
+}
+h3 {
+  color: #333300;
+  font-size: 22px;
+  font-family: 'Arvo';
+}
+.head {
+  color: white;
+  font-family: 'Arvo';
+  border: 2px solid white;
+  text-align: center;
+  font-size: 35px;
+  margin: 10px;
+  background-color: #ff4d4d;
+  background-image: url(https://raw.githubusercontent.com/codefellows/seattle-201d18/master/class-06-dom-objects-domain_modeling/assets/salmon.png);
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.descrip {
+  margin: 10px;
+  border: 2px solid white;
+  font-family: Palatino;
+  padding-left: 30px;
+  background-color: #ff4d4d;
+}
+.info {
+  margin: 10px;
+  border: 2px solid white;
+  font-family: Palatino;
+  padding-left: 30px;
+  background-color: #ff4d4d;
+}
+.lists {
+  font-family: Helvetica;
+  border: 2px solid white;
+  padding-left: 30px;
+  margin: 10px;
+  background-color: #ff4d4d;
+}

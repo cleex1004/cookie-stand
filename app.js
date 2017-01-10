@@ -42,7 +42,7 @@ var firstPike = {
     };
     console.log(newAdded);
     var pikeSum = document.getElementById('first-pike-sum');
-    pikeSum.textContent = 'total: ' + newAdded;
+    pikeSum.textContent = 'total: ' + newAdded + ' cookies.';
   },
 };
 
@@ -85,7 +85,7 @@ var seaTacAirport = {
     };
     console.log(newAdded);
     var seatacSum = document.getElementById('seatac-airport-sum');
-    seatacSum.textContent = 'total: ' + newAdded;
+    seatacSum.textContent = 'total: ' + newAdded + ' cookies.';
   },
 };
 
@@ -128,7 +128,7 @@ var seattleCenter = {
     };
     console.log(newAdded);
     var seattleCenterSum = document.getElementById('seattle-center-sum');
-    seattleCenterSum.textContent = 'total: ' + newAdded;
+    seattleCenterSum.textContent = 'total: ' + newAdded + ' cookies.';
   },
 };
 
@@ -171,7 +171,7 @@ var capitolHill = {
     };
     console.log(newAdded);
     var capitolHillSum = document.getElementById('capitol-hill-sum');
-    capitolHillSum.textContent = 'total: ' + newAdded;
+    capitolHillSum.textContent = 'total: ' + newAdded + ' cookies.';
   },
 };
 
@@ -214,7 +214,7 @@ var alki = {
     };
     console.log(newAdded);
     var alkiSum = document.getElementById('alki-sum');
-    alkiSum.textContent = 'total: ' + newAdded;
+    alkiSum.textContent = 'total: ' + newAdded + ' cookies.';
   },
 };
 
