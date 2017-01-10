@@ -11,38 +11,38 @@ var firstPike = {
   random: function (minCustomer,maxCustomer) {
     var min = Math.ceil(this.minCustomer);
     var max = Math.floor(this.maxCustomer);
-    //console.log(Math.floor(Math.random() * (max - min + 1)) + min);
+    console.log(Math.floor(Math.random() * (max - min + 1)) + min + ' random number First Pike.');
     return Math.floor(Math.random() * (max - min + 1)) + min;
   },
-  cookiesForHour: function() {
+  cookiesPerHour: function() {
     for (var index = 0; index < times.length; index++) {
       var salesPerHour = Math.floor(this.random() * this.avgPerSale);
-      console.log(salesPerHour);
+      console.log(salesPerHour + ' cookies per hour First Pike.');
       this.total.push(salesPerHour);
     }
     return this.total;
   },
   sum: function() {
     var added = 0;
-    this.cookiesForHour();
-    for (var indez = 0; indez < this.total.length; indez++) {
-      added += this.total[indez];
-      console.log(added + 'added is here');
+    this.cookiesPerHour();
+    for (var indey = 0; indey < this.total.length; indey++) {
+      added += this.total[indey];
+      console.log(added + ' sum of cookies First Pike.');
     }
     return added;
   },
   print: function() {
     var newAdded = this.sum();
     var pikeList = document.getElementById('first-pike-list');
-    for (var indey = 0; indey < this.total.length; indey++) {
+    for (var indez = 0; indez < this.total.length; indez++) {
       var listElement = document.createElement('li');
-      listElement.textContent = times[indey] + ': ' + this.total[indey] + ' cookies.';
-      console.log(pikeList);
+      listElement.textContent = times[indez] + ': ' + this.total[indez] + ' cookies.';
       pikeList.appendChild(listElement);
     };
-    console.log(newAdded);
+    console.log(newAdded + ' total sum First Pike.');
     var pikeSum = document.getElementById('first-pike-sum');
-    pikeSum.textContent = 'total: ' + newAdded + ' cookies.';
+    pikeSum.textContent = 'Total: ' + newAdded + ' cookies.';
+    pikeSum.setAttribute('class', 'total');
   },
 };
 
@@ -55,37 +55,38 @@ var seaTacAirport = {
   random: function (minCustomer,maxCustomer) {
     var min = Math.ceil(this.minCustomer);
     var max = Math.floor(this.maxCustomer);
+    console.log(Math.floor(Math.random() * (max - min + 1)) + min + ' random number SeaTac.');
     return Math.floor(Math.random() * (max - min + 1)) + min;
   },
-  cookiesForHour: function () {
+  cookiesPerHour: function () {
     for (var index = 0; index < times.length; index++) {
       var salesPerHour = Math.floor(this.random() * this.avgPerSale);
-      console.log(salesPerHour);
+      console.log(salesPerHour + ' cookies per hour SeaTac.');
       this.total.push(salesPerHour);
     }
     return this.total;
   },
   sum: function() {
     var added = 0;
-    this.cookiesForHour();
-    for (var indez = 0; indez < this.total.length; indez++) {
-      added += this.total[indez];
-      console.log(added + 'added is here');
+    this.cookiesPerHour();
+    for (var indey = 0; indey < this.total.length; indey++) {
+      added += this.total[indey];
+      console.log(added + ' sum of cookies SeaTac.');
     }
     return added;
   },
   print: function() {
     var newAdded = this.sum();
     var airportList = document.getElementById('seatac-airport-list');
-    for (var indey = 0; indey < this.total.length; indey++) {
+    for (var indez = 0; indez < this.total.length; indez++) {
       var listElement = document.createElement('li');
-      listElement.textContent = times[indey] + ': ' + this.total[indey] + ' cookies.';
-      console.log(airportList);
+      listElement.textContent = times[indez] + ': ' + this.total[indez] + ' cookies.';
       airportList.appendChild(listElement);
     };
-    console.log(newAdded);
+    console.log(newAdded + ' total sum SeaTac.');
     var seatacSum = document.getElementById('seatac-airport-sum');
-    seatacSum.textContent = 'total: ' + newAdded + ' cookies.';
+    seatacSum.textContent = 'Total: ' + newAdded + ' cookies.';
+    seatacSum.setAttribute('class', 'total');
   },
 };
 
@@ -98,37 +99,38 @@ var seattleCenter = {
   random: function (minCustomer,maxCustomer) {
     var min = Math.ceil(this.minCustomer);
     var max = Math.floor(this.maxCustomer);
+    console.log(Math.floor(Math.random() * (max - min + 1)) + min + ' random number Sea Cent.');
     return Math.floor(Math.random() * (max - min + 1)) + min;
   },
-  cookiesForHour: function () {
+  cookiesPerHour: function () {
     for (var index = 0; index < times.length; index++) {
       var salesPerHour = Math.floor(this.random() * this.avgPerSale);
-      console.log(salesPerHour);
+      console.log(salesPerHour + ' cookies per hour Sea Cent.');
       this.total.push(salesPerHour);
     }
     return this.total;
   },
   sum: function() {
     var added = 0;
-    this.cookiesForHour();
-    for (var indez = 0; indez < this.total.length; indez++) {
-      added += this.total[indez];
-      console.log(added + 'added is here');
+    this.cookiesPerHour();
+    for (var indey = 0; indey < this.total.length; indey++) {
+      added += this.total[indey];
+      console.log(added + ' sum of cookies Sea Cent.');
     }
     return added;
   },
   print: function() {
     var newAdded = this.sum();
     var seattleCenterList = document.getElementById('seattle-center-list');
-    for (var indey = 0; indey < this.total.length; indey++) {
+    for (var indez = 0; indez < this.total.length; indez++) {
       var listElement = document.createElement('li');
-      listElement.textContent = times[indey] + ': ' + this.total[indey] + ' cookies.';
-      console.log(seattleCenterList);
+      listElement.textContent = times[indez] + ': ' + this.total[indez] + ' cookies.';
       seattleCenterList.appendChild(listElement);
     };
-    console.log(newAdded);
+    console.log(newAdded + ' total sum Sea Cent.');
     var seattleCenterSum = document.getElementById('seattle-center-sum');
-    seattleCenterSum.textContent = 'total: ' + newAdded + ' cookies.';
+    seattleCenterSum.textContent = 'Total: ' + newAdded + ' cookies.';
+    seattleCenterSum.setAttribute('class', 'total');
   },
 };
 
@@ -141,37 +143,38 @@ var capitolHill = {
   random: function (minCustomer,maxCustomer) {
     var min = Math.ceil(this.minCustomer);
     var max = Math.floor(this.maxCustomer);
+    console.log(Math.floor(Math.random() * (max - min + 1)) + min + ' random number Cap Hill.');
     return Math.floor(Math.random() * (max - min + 1)) + min;
   },
-  cookiesForHour: function () {
+  cookiesPerHour: function () {
     for (var index = 0; index < times.length; index++) {
       var salesPerHour = Math.floor(this.random() * this.avgPerSale);
-      console.log(salesPerHour);
+      console.log(salesPerHour + ' cookies per hour Cap Hill.');
       this.total.push(salesPerHour);
     }
     return this.total;
   },
   sum: function() {
     var added = 0;
-    this.cookiesForHour();
-    for (var indez = 0; indez < this.total.length; indez++) {
-      added += this.total[indez];
-      console.log(added + 'added is here');
+    this.cookiesPerHour();
+    for (var indey = 0; indey < this.total.length; indey++) {
+      added += this.total[indey];
+      console.log(added + ' sum of cookies Cap Hill.');
     }
     return added;
   },
   print: function() {
     var newAdded = this.sum();
     var capitolHillList = document.getElementById('capitol-hill-list');
-    for (var indey = 0; indey < this.total.length; indey++) {
+    for (var indez = 0; indez < this.total.length; indez++) {
       var listElement = document.createElement('li');
-      listElement.textContent = times[indey] + ': ' + this.total[indey] + ' cookies.';
-      console.log(capitolHillList);
+      listElement.textContent = times[indez] + ': ' + this.total[indez] + ' cookies.';
       capitolHillList.appendChild(listElement);
     };
-    console.log(newAdded);
+    console.log(newAdded + ' total sum Cap Hill.');
     var capitolHillSum = document.getElementById('capitol-hill-sum');
-    capitolHillSum.textContent = 'total: ' + newAdded + ' cookies.';
+    capitolHillSum.textContent = 'Total: ' + newAdded + ' cookies.';
+    capitolHillSum.setAttribute('class', 'total');
   },
 };
 
@@ -184,37 +187,38 @@ var alki = {
   random: function (minCustomer,maxCustomer) {
     var min = Math.ceil(this.minCustomer);
     var max = Math.floor(this.maxCustomer);
+    console.log(Math.floor(Math.random() * (max - min + 1)) + min + ' random number Alki.');
     return Math.floor(Math.random() * (max - min + 1)) + min;
   },
-  cookiesForHour: function () {
+  cookiesPerHour: function () {
     for (var index = 0; index < times.length; index++) {
       var salesPerHour = Math.floor(this.random() * this.avgPerSale);
-      console.log(salesPerHour);
+      console.log(salesPerHour + ' cookies per hour Alki.');
       this.total.push(salesPerHour);
     }
     return this.total;
   },
   sum: function() {
     var added = 0;
-    this.cookiesForHour();
-    for (var indez = 0; indez < this.total.length; indez++) {
-      added += this.total[indez];
-      console.log(added + 'added is here');
+    this.cookiesPerHour();
+    for (var indey = 0; indey < this.total.length; indey++) {
+      added += this.total[indey];
+      console.log(added + ' sum of cookies Alki.');
     }
     return added;
   },
   print: function() {
     var newAdded = this.sum();
     var alkiList = document.getElementById('alki-list');
-    for (var indey = 0; indey < this.total.length; indey++) {
+    for (var indez = 0; indez < this.total.length; indez++) {
       var listElement = document.createElement('li');
-      listElement.textContent = times[indey] + ': ' + this.total[indey] + ' cookies.';
-      console.log(alkiList);
+      listElement.textContent = times[indez] + ': ' + this.total[indez] + ' cookies.';
       alkiList.appendChild(listElement);
     };
-    console.log(newAdded);
+    console.log(newAdded + ' total Sum Alki.');
     var alkiSum = document.getElementById('alki-sum');
-    alkiSum.textContent = 'total: ' + newAdded + ' cookies.';
+    alkiSum.textContent = 'Total: ' + newAdded + ' cookies.';
+    alkiSum.setAttribute('class', 'total');
   },
 };
 
