@@ -47,11 +47,14 @@ Location.prototype.sum = function() {
 //print method
 Location.prototype.print = function() {
   var newAdded = this.sum();
-  var tableElement = document.getElementById(this.location);
+  var tableElement = document.getElementById('location-table');
+  var tableRow = document.createElement('tr');
+  tableRow.setAttribute('id', this.location);
+  tableElement.appendChild(tableRow);
   for (var k = 0; k < this.total.length; k++) {
-    var tableRow = document.createElement('td');
-    tableRow.textContent = this.total[k];
-    tableElement.appendChild(tableRow);
+    var tableRowData = document.createElement('td');
+    tableRowData.textContent = this.total[k];
+    tableRow.appendChild(tableRowData);
   };
 };
 //creating objects
@@ -66,18 +69,28 @@ capitolHill.print();
 var alki = new Location('Alki', 2, 16, 4.6);
 alki.print();
 //stretch goal
-var timeTotals = ['Totals',];
-var timeCount = 0;
-for (var l = 1; l < times.length - 1; l++) {
-  var timeSum = firstPike.total[l] + seaTacAirport.total[l] + seattleCenter.total[l] + capitolHill.total[l] + alki.total[l];
-  timeTotals.push(timeSum);
-  timeCount += timeTotals[l];
-  console.log(timeTotals + ' timetotals');
-};
-timeTotals.push(timeCount);
-var tableEl = document.getElementById('totals');
-for (var m = 0; m < timeTotals.length; m++) {
-  var timeRow = document.createElement('td');
-  timeRow.textContent = timeTotals[m];
-  tableEl.appendChild(timeRow);
-};
+// var timeTotals = ['Totals',];
+// var timeCount = 0;
+// for (var l = 1; l < times.length - 1; l++) {
+//   var timeSum = firstPike.total[l] + seaTacAirport.total[l] + seattleCenter.total[l] + capitolHill.total[l] + alki.total[l];
+//   timeTotals.push(timeSum);
+//   timeCount += timeTotals[l];
+//   console.log(timeTotals + ' timetotals');
+// };
+// timeTotals.push(timeCount);
+// var tableEl = document.getElementById('totals');
+// for (var m = 0; m < timeTotals.length; m++) {
+//   var timeRow = document.createElement('td');
+//   timeRow.textContent = timeTotals[m];
+//   tableEl.appendChild(timeRow);
+// };
+
+//form
+var formEl = document.getElementById('form');
+formEl.addEventListener('submit', function(event){
+  event.preventDefault();
+  event.stopPropagation();
+  var newStore = new Location(event.target.location.value, event.target.minCustomer.value, event.target.maxCustomer.value, event.target.avgPerSale.value);
+  newStore.print();
+  console.log(newStore);
+}, false);
