@@ -15,7 +15,7 @@ function Location(location, minCustomer, maxCustomer, avgPerSale) {
   this.minCustomer = minCustomer;
   this.maxCustomer = maxCustomer;
   this.avgPerSale = avgPerSale;
-  this.total = [];
+  this.total = [this.location,];
 };
 //random method
 Location.prototype.random = function(minCustomer,maxCustomer) {
@@ -26,7 +26,7 @@ Location.prototype.random = function(minCustomer,maxCustomer) {
 };
 //cookies per hour method
 Location.prototype.cookiesPerHour = function() {
-  for (var i = 0; i < times.length - 1; i++) {
+  for (var i = 1; i < times.length - 1; i++) {
     var salesPerHour = Math.floor(this.random() * this.avgPerSale);
     console.log(salesPerHour + ' cookies per hour ' + this.location);
     this.total.push(salesPerHour);
@@ -37,7 +37,7 @@ Location.prototype.cookiesPerHour = function() {
 Location.prototype.sum = function() {
   var added = 0;
   this.cookiesPerHour();
-  for (var j = 0; j < this.total.length - 1; j++) {
+  for (var j = 1; j < this.total.length - 1; j++) {
     added += this.total[j];
     console.log(added + ' sum of cookies ' + this.location);
   };
