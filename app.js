@@ -1,6 +1,6 @@
 'use strict';
 
-var times = ['', '7am', '8am', '9am', '10am', '11am', '12pm', '1pm', '2pm', '3pm', '4pm', '5pm', '6pm', '7pm', '8pm', 'total'];
+var times = ['', '7am', '8am', '9am', '10am', '11am', '12pm', '1pm', '2pm', '3pm', '4pm', '5pm', '6pm', '7pm', '8pm', 'Daily Location Total'];
 
 //first row of table, times
 var timesElement = document.getElementById('times');
@@ -65,3 +65,19 @@ var capitolHill = new Location('Capitol Hill', 20, 38, 2.3);
 capitolHill.print();
 var alki = new Location('Alki', 2, 16, 4.6);
 alki.print();
+//stretch goal
+var timeTotals = ['Totals',];
+var timeCount = 0;
+for (var l = 1; l < times.length - 1; l++) {
+  var timeSum = firstPike.total[l] + seaTacAirport.total[l] + seattleCenter.total[l] + capitolHill.total[l] + alki.total[l];
+  timeTotals.push(timeSum);
+  timeCount += timeTotals[l];
+  console.log(timeTotals + ' timetotals');
+};
+timeTotals.push(timeCount);
+var tableEl = document.getElementById('totals');
+for (var m = 0; m < timeTotals.length; m++) {
+  var timeRow = document.createElement('td');
+  timeRow.textContent = timeTotals[m];
+  tableEl.appendChild(timeRow);
+};
