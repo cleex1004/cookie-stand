@@ -11,11 +11,27 @@
     <link rel="stylesheet" type="text/css"
       href="https://fonts.googleapis.com/css?family=Arvo">
   </div>
+  <div class="input">
+    <form id="form">
+      <fieldset>
+        <legend>New Store</legend>
+        <label for="location">Location:</label>
+        <input name="location" id="location-input" type="text"/>
+        <label for="minCustomer">Minimum Customers:</label>
+        <input name="minCustomer" id="minCustomer-input" type="text"/>
+        <label for="maxCustomer">Maximum Customers:</label>
+        <input name="maxCustomer" id="maxCustomer-input" type="text"/>
+        <label for="avgPerSale">Average Per Sale:</label>
+        <input name="avgPerSale" id="avgPerSale-input" type="text"/>
+        <button id="submit-button" type="submit">SUBMIT</button>
+      </fieldset>
+    </form>
+  </div>
   <div class="table">
     <table id="location-table">
       <tr id="times">
       </tr>
-      <tr id="First and Pike">
+      <!--<tr id="First and Pike">
       </tr>
       <tr id="SeaTac Airport">
       </tr>
@@ -25,6 +41,8 @@
       </tr>
       <tr id="Alki">
       </tr>
+      <tr id="newStore">
+      </tr>-->
       <tr id="totals">
       </tr>
     </table>
