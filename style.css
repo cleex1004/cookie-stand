@@ -40,6 +40,7 @@ h3 {
   text-align: center;
   font-size: 35px;
   margin: 10px;
+  padding: 20px;
   background-color: #ff4d4d;
   background-image: url(https://raw.githubusercontent.com/codefellows/seattle-201d18/master/class-06-dom-objects-domain_modeling/assets/salmon.png);
   background-repeat: no-repeat;
@@ -68,4 +69,23 @@ h3 {
 }
 .total {
   color: #333300;
+}
+.table {
+  font-family: Helvetica;
+  font-size: 25px;
+  border: 2px solid white;
+  padding-left: 30px;
+  margin: 10px;
+  background-color: #ff4d4d;
+}
+#times {
+  color: white;
+}
+#totals {
+  color: #333300;
+}
+td {
+  margin: 5px;
+  padding: 10px;
+  text-align: center;
 }
