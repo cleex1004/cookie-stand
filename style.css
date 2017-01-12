@@ -67,6 +67,14 @@ h3 {
   margin: 10px;
   background-color: #ff4d4d;
 }
+.input {
+  font-family: Helvetica;
+  font-size: 20px;
+  border: 2px solid white;
+  padding: 15px;
+  margin: 10px;
+  background-color: #ff4d4d;
+}
 .total {
   color: #333300;
 }
