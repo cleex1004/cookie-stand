@@ -3,7 +3,7 @@
 var times = ['', '7am', '8am', '9am', '10am', '11am', '12pm', '1pm', '2pm', '3pm', '4pm', '5pm', '6pm', '7pm', '8pm', 'Daily Location Total'];
 
 //first row of table, times
-var firstRow = function() {
+function firstRow () {
   var timesElement = document.getElementById('times');
   for (var h = 0; h < times.length; h++) {
     var rowTimes = document.createElement('td');
@@ -57,7 +57,7 @@ Location.prototype.print = function() {
   };
 };
 //stretch goal
-var stretchTotal = function() {
+function stretchTotal() {
   var timeTotals = ['Hourly Totals',];
   var timeCount = 0;
   for (var l = 1; l < times.length - 1; l++) {
