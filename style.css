@@ -69,9 +69,9 @@ h3 {
 }
 .input {
   font-family: Helvetica;
-  font-size: 15px;
+  font-size: 20px;
   border: 2px solid white;
-  padding-left: 30px;
+  padding: 15px;
   margin: 10px;
   background-color: #ff4d4d;
 }
