@@ -64,10 +64,10 @@ function firstRow() {
     timesElement.appendChild(rowTimes);
   };
 };
-//form submit button
+//form submit event button
 function button() {
-  var formEl = document.getElementById('form');
-  formEl.addEventListener('submit', function(event){
+  var formElement = document.getElementById('form');
+  formElement.addEventListener('submit', function(event){
     event.preventDefault();
     event.stopPropagation();
     var newStore = new Location(event.target.location.value, event.target.minCustomer.value, event.target.maxCustomer.value, event.target.avgPerSale.value);
@@ -93,7 +93,6 @@ function footer() {
     hourlyTotal.push(count);
   };
   console.log(hourlyTotal + ' array');
-  // return hourlyTotal;
 };
 //prints total to footer row
 function printTotal() {
