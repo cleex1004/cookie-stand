@@ -2,21 +2,6 @@ body {
   background-color:   #f98686;
   color: #000033;
 }
-/*ul {
-  font-weight: bold;
-  font-size: 30px;
-  color: white;
-  margin: 20px;
-  font-family: 'Arvo';
-}
-li {
-  font-weight: normal;
-  font-size: 20px;
-  color: #000033;
-  margin-left: 20px;
-  margin-top: 5px;
-  font-family: Helvetica;
-}*/
 p {
   font-size: 22px;
   color: #000033;
@@ -71,13 +56,6 @@ h3 {
   padding-left: 30px;
   background-color: #ff4d4d;
 }
-.lists {
-  font-family: Helvetica;
-  border: 2px solid white;
-  padding-left: 30px;
-  margin: 10px;
-  background-color: #ff4d4d;
-}
 .input {
   font-family: Helvetica;
   font-size: 20px;
@@ -96,6 +74,32 @@ h3 {
   padding-left: 30px;
   margin: 10px;
   background-color: #ff4d4d;
+}
+.sales {
+  margin: 10px;
+  border: 2px solid white;
+  font-family: Palatino;
+  padding-left: 30px;
+  background-color: #ff4d4d;
+}
+#sales-link {
+  font-size: 20px;
+  text-align: right;
+  padding-right: 30px;
+  color: white;
+}
+.index {
+  margin: 10px;
+  border: 2px solid white;
+  font-family: Palatino;
+  padding-left: 30px;
+  background-color: #ff4d4d;
+}
+#index-link {
+  font-size: 20px;
+  text-align: right;
+  padding-right: 30px;
+  color: white;
 }
 #times {
   color: white;
